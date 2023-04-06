@@ -52,6 +52,15 @@ public class StockPortfolio extends Stock {
 		StockPortfolio portfolio = new StockPortfolio();
 		portfolio.addStocks();
 		portfolio.stockReport();
+		
+		Account account = new Account(500);
+		System.out.println("Initial Balance: " + account.getBalance());
+		account.credit(1000);
+		System.out.println("After crediting the amount: " + account.getBalance());
+		account.debit(200);
+		System.out.println("After debiting the amount: " + account.getBalance());
+		account.debit(1100);
+		System.out.println("After debiting the amount: " + account.getBalance());
 
 	}
 
